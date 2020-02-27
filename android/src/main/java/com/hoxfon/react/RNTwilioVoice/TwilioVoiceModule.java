@@ -504,7 +504,7 @@ public class TwilioVoiceModule extends ReactContextBaseJavaModule implements Act
         if (BuildConfig.DEBUG) {
             Log.d(TAG, "initWithAccessToken ACTION_FCM_TOKEN");
         }
-        registerForCallInvites();
+        // registerForCallInvites();
         WritableMap params = Arguments.createMap();
         params.putBoolean("initialized", true);
         promise.resolve(params);
